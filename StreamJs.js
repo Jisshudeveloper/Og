@@ -270,7 +270,7 @@ function vlc_player() {
 }
 
 function mx_player() {
-    const openstreamlink = Jisshulink;
+    let openstreamlink = Jisshulink.replace(/^https:\/\//, "");
     const openMx = `intent://${openstreamlink}#Intent;scheme=https;package=com.mxtech.videoplayer.ad;action=android.intent.action.VIEW;end`;
     window.location.href = openMx;
 }
