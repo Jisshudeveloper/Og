@@ -270,9 +270,9 @@ function vlc_player() {
 }
 
 function mx_player() {
-    let openstreamlink = Jisshulink.replace(/^https:\/\//, "");
-    const openMx = `intent://${openstreamlink}#Intent;scheme=https;package=com.mxtech.videoplayer.ad;action=android.intent.action.VIEW;end`;
-    window.location.href = openMx;
+    const openstreamlink = Jisshulink.replace(/^https?:\/\//, '');
+    const intentURL = `intent://${openstreamlink}#Intent;scheme=https;package=com.mxtech.videoplayer.ad;action=android.intent.action.VIEW;end`;
+    window.location.href = intentURL;
 }
 
 function playit_player() {
