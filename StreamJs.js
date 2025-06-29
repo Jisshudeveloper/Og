@@ -1,5 +1,5 @@
 //jaldi yeha se hato
-// (c) lord krishna (c) biisal
+// @Jisshu_bots
 
 async function getDets() {
     let randPage = Math.floor(1 + Math.random() * 100)
